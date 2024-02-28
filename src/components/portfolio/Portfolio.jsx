@@ -1,4 +1,5 @@
 import "./portfolio.scss";
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -68,12 +69,18 @@ const itemData = [
 ];
 
 const Portfolio = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <div className="portfolio">
       <div className="wrapper">
       <h1>Portfolio</h1>
       {/* < sx={{ width: 1400, height: 900, overflowY: 'scroll' }}> */}
-      <Box sx={{ width: 1400, height: 900, overflowY: 'scroll' }}>
+      <Box sx={{ width: 1400, height: expanded ? 'auto' : 900, overflowY: 'scroll' }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -88,6 +95,10 @@ const Portfolio = () => {
         ))}
       </ImageList>
     </Box>
+       {/* Render button to toggle expand/collapse */}
+       <button onClick={toggleExpand} variant="outlined" color="primary">
+          {expanded ? 'Collapse' : 'Expand'}
+        </button>
 
 
        
