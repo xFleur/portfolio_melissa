@@ -14,7 +14,7 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           
-          <a href="#portfolio">
+          <a href="/portfolio">
           Portfolio
           </a>
           
