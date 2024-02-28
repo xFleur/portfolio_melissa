@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './app.scss'
+import Navbar from './components/navbar/Navbar'
+import Hero from './components/hero/Hero'
+import Parallax from './components/parallax/Parallax'
+import Bio from './components/bio/Bio'
+import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/contact/Contact'
+import Cursor from './components/cursor/Cursor'
+import Resume from './components/resume/Resume'
+import Experience from './components/experience/Experience'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React = mel v0</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+       <Cursor />
+      <section id="Homepage">
+        <Navbar />
+        <Hero />
+      </section>
+      {/* <section id="Services"> */}
+        {/* <Parallax type="services" /> */}
+        {/* <Parallax type="portfolio" /> */}
+      {/* </section> */}
+      <section id="Biography">
+      <Bio />
+      </section>
+      <section id="Experience">
+      <Experience />
+      </section>
+      <section id="Portfolio">
+      <Portfolio />
+      </section>
+      <section id="Resume">
+      <Resume />
+      </section>
+      <section id="Contact">
+        <Contact />
+      </section>
+    </div>
   )
 }
 
