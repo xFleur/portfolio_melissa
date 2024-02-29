@@ -4,6 +4,23 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const itemData = [
   {
@@ -27,7 +44,7 @@ const itemData = [
     author: 'Christian Mackie',
   },
   {
-    img: 'public/portfolio/game_overview.png',
+    img: 'public/portfolio/game_player.png',
     title: 'Blinds',
     author: 'Darren Richardson',
   },
@@ -52,23 +69,30 @@ const itemData = [
     author: 'Jen P.',
   },
   {
-    img: 'public/portfolio/php_home.png',
-    title: 'Storage',
-    author: 'Douglas Sheppard',
-  },
-  {
-    img: 'public/portfolio/w2p_home.png',
+    img: 'public/portfolio/study_php2.png',
     title: 'Candle',
     author: 'Fi Bell',
   },
   {
-    img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
+    img: 'public/portfolio/share_php1.png',
     title: 'Coffee table',
+    author: 'Hutomo Abrianto',
+  },
+  {
+    img: 'public/portfolio/it_chal_quest_hardw.png',
+    title: 'Coffee',
+    author: 'Hutomo Abrianto',
+  },
+  {
+    img: 'public/portfolio/gen_home.png',
+    title: 'Coffee2',
     author: 'Hutomo Abrianto',
   },
 ];
 
 const Portfolio = () => {
+  const ref = useRef();
+  
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -76,34 +100,34 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio">
+    <motion.div
+    ref={ref}
+    className="portfolio"
+    variants={variants}
+    initial="initial"
+    whileInView="animate"
+  >
+
+   
       <div className="wrapper">
       <h1>Portfolio</h1>
       {/* < sx={{ width: 1400, height: 900, overflowY: 'scroll' }}> */}
       <Box sx={{ width: 1400, height: expanded ? 'auto' : 900, overflowY: 'scroll' }}>
       <ImageList variant="masonry" cols={3} gap={8}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              alt={item.title}
-              loading="lazy"
-            />
-            <ImageListItemBar position="below" title={item.author} />
-          </ImageListItem>
-        ))}
+      {itemData.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.img}?w=248&fit=crop&auto=format`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
       </ImageList>
     </Box>
-       {/* Render button to toggle expand/collapse */}
-       <button onClick={toggleExpand} variant="outlined" color="primary">
-          {expanded ? 'Collapse' : 'Expand'}
-        </button>
-
-
-       
       </div>
-    </div>
+      </motion.div>
   );
 };
 

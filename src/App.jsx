@@ -1,7 +1,7 @@
 import './app.scss'
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
-import Parallax from './components/parallax/Parallax'
+// import Parallax from './components/parallax/Parallax'
 import Bio from './components/bio/Bio'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'

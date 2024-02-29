@@ -38,6 +38,13 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const handleButtonClick = (id) => {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <div className="hero">
       <div className="wrapper">
@@ -47,15 +54,17 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>MELISSA JULSING</motion.h2>
+          <motion.h2 variants={textVariants}>HEJ! MY NAME IS MELISSA JULSING</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UX/UI designer
+            Front-end Developer and UX/UI designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+            <motion.button onClick={() => handleButtonClick("#Portfolio")} variants={textVariants}>
+              Portfolio
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button onClick={() => handleButtonClick("#Contact")} variants={textVariants}>
+              Contact Me
+              </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -65,14 +74,14 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Writer Content Creator Influencer
-      </motion.div>
+      </motion.div> */}
       <div className="imageContainer">
         <img src="/hero5.png" alt="" />
       </div>
