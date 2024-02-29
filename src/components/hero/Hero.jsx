@@ -54,7 +54,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HEJ! MY NAME IS MELISSA JULSING</motion.h2>
+          <motion.h2 variants={textVariants}>Hi! MY NAME IS MELISSA JULSING</motion.h2>
           <motion.h1 variants={textVariants}>
             Front-end Developer and UX/UI designer
           </motion.h1>

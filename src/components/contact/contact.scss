@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  color: rgb(210,90,49);
 
   @include mobile {
     width: 100%;
@@ -52,7 +53,7 @@
 
 
     .phoneSvg {
-      stroke: rgb(102, 118, 128);
+      stroke: rgb(210,90,49);
       position: absolute;
       margin: auto;
       z-index: -1;
@@ -68,8 +69,8 @@
         font-size: 16px;
         padding: 20px;
         background-color: transparent;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid rgb(210,90,49);
+        color: rgb(210,90,49);
         border-radius: 5px;
 
         @include mobile {
@@ -79,9 +80,11 @@
 
       button {
         font-size: 19px;
+        color: #e6e4d9;
         padding: 20px;
         border: none;
-        background-color: rgb(141, 131, 111);
+        // background-color: rgb(141, 131, 111);
+        background-color: rgb(210,90,49);
         cursor: pointer;
         font-weight: 500;
         @include mobile {
