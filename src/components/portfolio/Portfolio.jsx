@@ -24,12 +24,12 @@ const variants = {
 
 const itemData = [
   {
-    img: 'public//portfolio/AppleOpdrachtgoe.jpg',
+    img: '/portfolio/AppleOpdrachtgoe.jpg',
     title: 'Apple Design Challenge',
     author: 'Apple Design Challenge',
   },
   {
-    img: 'public//portfolio/AR2.jpg',
+    img: '/portfolio/AR2.jpg',
     title: 'AR',
     author: 'Design AR public transport',
   },
