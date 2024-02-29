@@ -24,67 +24,67 @@ const variants = {
 
 const itemData = [
   {
-    img: 'public/portfolio/AppleOpdrachtgoe.jpg',
+    img: '/portfolio/AppleOpdrachtgoe.jpg',
     title: 'Apple Design Challenge',
     author: 'Apple Design Challenge',
   },
   {
-    img: 'public/portfolio/AR2.jpg',
+    img: '/portfolio/AR2.jpg',
     title: 'AR',
     author: 'Design AR public transport',
   },
   {
-    img: 'public/portfolio/buddy_iphone.png',
+    img: '/portfolio/buddy_iphone.png',
     title: 'Sink',
     author: 'Charles Deluvio',
   },
   {
-    img: 'public/portfolio/design_groente_app.jpg',
+    img: '/portfolio/design_groente_app.jpg',
     title: 'Kitchen',
     author: 'Christian Mackie',
   },
   {
-    img: 'public/portfolio/game_player.png',
+    img: '/portfolio/game_player.png',
     title: 'Blinds',
     author: 'Darren Richardson',
   },
   {
-    img: 'public/portfolio/ipmedt_full.png',
+    img: '/portfolio/ipmedt_full.png',
     title: 'Chairs',
     author: 'Taylor Simpson',
   },
   {
-    img: 'public/portfolio/ipmedt_zwem_desk_welkom.png',
+    img: '/portfolio/ipmedt_zwem_desk_welkom.png',
     title: 'Laptop',
     author: 'Ben Kolde',
   },
   {
-    img: 'public/portfolio/ipmedt2_quiz_start.png',
+    img: '/portfolio/ipmedt2_quiz_start.png',
     title: 'Doors',
     author: 'Philipp Berndt',
   },
   {
-    img: 'public/portfolio/ipmedt3_vr_overview.png',
+    img: '/portfolio/ipmedt3_vr_overview.png',
     title: 'Coffee',
     author: 'Jen P.',
   },
   {
-    img: 'public/portfolio/study_php2.png',
+    img: '/portfolio/study_php2.png',
     title: 'Candle',
     author: 'Fi Bell',
   },
   {
-    img: 'public/portfolio/share_php1.png',
+    img: '/portfolio/share_php1.png',
     title: 'Coffee table',
     author: 'Hutomo Abrianto',
   },
   {
-    img: 'public/portfolio/it_chal_quest_hardw.png',
+    img: '/portfolio/it_chal_quest_hardw.png',
     title: 'Coffee',
     author: 'Hutomo Abrianto',
   },
   {
-    img: 'public/portfolio/gen_home.png',
+    img: '/portfolio/gen_home.png',
     title: 'Coffee2',
     author: 'Hutomo Abrianto',
   },
