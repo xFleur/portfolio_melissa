@@ -24,17 +24,17 @@ const variants = {
 
 const itemData = [
   {
-    img: '/portfolio/AppleOpdrachtgoe.jpg',
+    img: './portfolio/AppleOpdrachtgoe.jpg',
     title: 'Apple Design Challenge',
     author: 'Apple Design Challenge',
   },
   {
-    img: '/portfolio/AR2.jpg',
+    img: './portfolio/AR2.jpg',
     title: 'AR',
     author: 'Design AR public transport',
   },
   {
-    img: 'public//portfolio/buddy_iphone.png',
+    img: 'public/portfolio/buddy_iphone.png',
     title: 'Sink',
     author: 'Charles Deluvio',
   },
@@ -44,7 +44,7 @@ const itemData = [
     author: 'Christian Mackie',
   },
   {
-    img: 'public//portfolio/game_player.png',
+    img: './portfolio/game_player.png',
     title: 'Blinds',
     author: 'Darren Richardson',
   },
