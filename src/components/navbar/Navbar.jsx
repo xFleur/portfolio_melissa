@@ -23,10 +23,10 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <a href="https://www.linkedin.com/in/melissa-j/">
-            <img src="/linkedin.png" alt="linkedin" />
+            <img src="public/linkedin.png" alt="linkedin" />
           </a>
           <a href="https://github.com/xFleur">
-            <img src="/github.png" alt="github" />
+            <img src="public/github.png" alt="github" />
           </a>
         </div>
       </div>
