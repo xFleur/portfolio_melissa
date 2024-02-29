@@ -88,6 +88,11 @@ const itemData = [
     title: 'Coffee2',
     author: 'Hutomo Abrianto',
   },
+  {
+    img: '/portfolio/holo_split.png',
+    title: 'Coffee2',
+    author: 'Hutomo Abrianto',
+  },
 ];
 
 const Portfolio = () => {
