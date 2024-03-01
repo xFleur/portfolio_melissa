@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const variants = {
   initial: {
@@ -18,16 +19,27 @@ const variants = {
   },
 };
 
+const onChange = () => {
+  console.log("Captcha value:", value);
+}
+
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [touched, setTouched] = useState(false);
 
   const isInView = useInView(ref, { margin: "-100px" });
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!captchaVerified) {
+      setError(true);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -44,6 +56,20 @@ const Contact = () => {
           setError(true);
         }
       );
+  };
+
+  const handleCaptchaChange = (value) => {
+    console.log("Captcha value:", value);
+    // Check if CAPTCHA has been successfully verified
+    if (value) {
+      setCaptchaVerified(true);
+    }
+  };
+
+  const handleInputFocus = () => {
+    if (!touched) {
+      setTouched(true);
+    }
   };
 
   return (
@@ -106,9 +132,15 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <input type="text" required placeholder="Name" name="name" onFocus={handleInputFocus}/>
+          <input type="email" required placeholder="Email" name="email" onFocus={handleInputFocus}/>
+          <textarea rows={8} placeholder="Message" name="message" onFocus={handleInputFocus}/>
+          {touched && (
+          <ReCAPTCHA
+            sitekey="6LcFiYUpAAAAADTYT2tma-QGrg3zmfjFSRl3bvdY"
+            onChange={handleCaptchaChange}
+          />
+          )}
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}
