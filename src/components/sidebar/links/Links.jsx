@@ -36,6 +36,7 @@ const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onTap={() => window.location.hash = item}
         >
           {item}
         </motion.a>
