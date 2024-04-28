@@ -22,11 +22,11 @@ const Navbar = () => {
           
         </motion.span>
         <div className="social">
-          <a href="https://www.linkedin.com/in/melissa-j/">
-            <img src="./linkedin.png" alt="linkedin" />
+          <a href="https://www.linkedin.com/in/melissa-j/"  target="_blank">
+            <img src="./images/icons/linkedin.png" alt="linkedin" />
           </a>
-          <a href="https://github.com/xFleur">
-            <img src="./github.png" alt="github" />
+          <a href="https://github.com/xFleur" target="_blank">
+            <img src="./images/icons/github.png" alt="github" />
           </a>
         </div>
       </div>

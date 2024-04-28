@@ -36,8 +36,14 @@ const Bio = () => {
         My adaptability and creative spirit enable me to quickly navigate new systems and situations. 
         Outside the professional field, my passion for hockey goes back to my childhood and I still actively participate in ice hockey. 
         Besides this beloved sport, I find passion in activities such as running, mountain biking and painting. 
-        Exploring the latest technologies also fascinates me.</motion.p>
-       
+        Exploring the latest technologies also fascinates me.
+        </motion.p>
+        <motion.img
+            variants=""
+            animate="scrollButton"
+            src="./images/melissa/prof/Subject5.png"
+            alt=""
+          />
       </motion.div>
     </motion.div>
     </motion.div>

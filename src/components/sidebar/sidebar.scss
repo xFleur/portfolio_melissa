@@ -36,7 +36,7 @@
         
 
         @include mobile {
-          font-size: 20px;
+          font-size: 27px;
         }
       }
     }
@@ -49,10 +49,11 @@
     height: 50px;
     border-radius: 50%;
     position: fixed;
-    top: 25px;
-    left: 25px;
+    top: 27px;
+    left: 26px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    scale: 1.2;
   }
 }

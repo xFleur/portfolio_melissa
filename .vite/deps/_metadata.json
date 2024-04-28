@@ -1,8 +1,85 @@
 {
-  "hash": "84928580",
+  "hash": "ecfe7e0f",
   "configHash": "4baa31df",
-  "lockfileHash": "e3b0c442",
-  "browserHash": "547d4814",
-  "optimized": {},
-  "chunks": {}
+  "lockfileHash": "3343eff3",
+  "browserHash": "4c312460",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "80030b72",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "730a9500",
+      "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "68fa2314",
+      "needsInterop": false
+    },
+    "@mui/material/Box": {
+      "src": "../../node_modules/@mui/material/Box/index.js",
+      "file": "@mui_material_Box.js",
+      "fileHash": "b8a5ac63",
+      "needsInterop": false
+    },
+    "@mui/material/ImageList": {
+      "src": "../../node_modules/@mui/material/ImageList/index.js",
+      "file": "@mui_material_ImageList.js",
+      "fileHash": "93417c9b",
+      "needsInterop": false
+    },
+    "@mui/material/ImageListItem": {
+      "src": "../../node_modules/@mui/material/ImageListItem/index.js",
+      "file": "@mui_material_ImageListItem.js",
+      "fileHash": "b6b86703",
+      "needsInterop": false
+    },
+    "@mui/material/ImageListItemBar": {
+      "src": "../../node_modules/@mui/material/ImageListItemBar/index.js",
+      "file": "@mui_material_ImageListItemBar.js",
+      "fileHash": "37f46c78",
+      "needsInterop": false
+    },
+    "@emailjs/browser": {
+      "src": "../../node_modules/@emailjs/browser/es/index.js",
+      "file": "@emailjs_browser.js",
+      "fileHash": "7378ef5b",
+      "needsInterop": false
+    },
+    "react-google-recaptcha": {
+      "src": "../../node_modules/react-google-recaptcha/lib/esm/index.js",
+      "file": "react-google-recaptcha.js",
+      "fileHash": "b760332f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PBF55NJH": {
+      "file": "chunk-PBF55NJH.js"
+    },
+    "chunk-AUUODYWE": {
+      "file": "chunk-AUUODYWE.js"
+    },
+    "chunk-G7WUWFMR": {
+      "file": "chunk-G7WUWFMR.js"
+    },
+    "chunk-YOGMFPQK": {
+      "file": "chunk-YOGMFPQK.js"
+    },
+    "chunk-FA6FVQOC": {
+      "file": "chunk-FA6FVQOC.js"
+    },
+    "chunk-UM3JHGVO": {
+      "file": "chunk-UM3JHGVO.js"
+    },
+    "chunk-CEQRFMJQ": {
+      "file": "chunk-CEQRFMJQ.js"
+    }
+  }
 }
