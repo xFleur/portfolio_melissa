@@ -43,6 +43,8 @@ const Hero = () => {
     const element = document.querySelector(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      // Update the URL hash using history.pushState
+      history.pushState(null, null, id);
     }
   };
   
