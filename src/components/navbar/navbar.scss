@@ -14,8 +14,9 @@
     height: 100%;
 
     h1 {
-      font-size: 40px;
+      font-size: 30px;
       text-align: center;
+      font-family:'Courier New', Courier, monospace;
     }
 
     @include mobile {

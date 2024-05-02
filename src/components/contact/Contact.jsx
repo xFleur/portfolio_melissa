@@ -134,12 +134,12 @@ const Contact = () => {
         >
           <input type="text" required placeholder="Name" name="name" onFocus={handleInputFocus}/>
           <input type="email" required placeholder="Email" name="email" onFocus={handleInputFocus}/>
-          <textarea rows={8} placeholder="Message" name="message" onFocus={handleInputFocus}/>
+          <textarea rows={4} placeholder="Message" name="message" onFocus={handleInputFocus}/>
           {touched && (
-          <ReCAPTCHA
-            sitekey="6LcFiYUpAAAAADTYT2tma-QGrg3zmfjFSRl3bvdY"
-            onChange={handleCaptchaChange}
-          />
+            <ReCAPTCHA
+              sitekey="6LcFiYUpAAAAADTYT2tma-QGrg3zmfjFSRl3bvdY"
+              onChange={handleCaptchaChange}
+            />
           )}
           <button>Submit</button>
           {error && "Error"}

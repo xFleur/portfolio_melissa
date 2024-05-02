@@ -10,42 +10,65 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
-
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 90px;
     color: rgb(0, 0, 0);
     font-size: 36px;
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
 
-    img{
-      width: 50%;
-      height: 50%;
-      object-fit:scale-down;
+    .text-container {
+      flex: 1; /* Let text-container take remaining space */
+      display: flex;
+      flex-direction: column; /* Stack h1 and p vertically */
     }
 
-    @include mobile {
-      // padding-top: calc(100vh - 100px);
-      font-size: 24px;
-    }
     h1 {
-      font-size: 50px;
+      margin-top: 90px;
+      font-size: 80px;
       color: rgb(210,90,49);
-
+      margin-bottom: 50px; /* Add spacing between h1 and p */
       @include mobile {
+        margin-top: -350px;
         font-size: 36px;
+        text-align: center;
       }
     }
+
     p {
       font-size: 30px;
       color: rgb(210,90,49);
-
       @include mobile {
         font-size: 16px;
+        margin-top: 250px;
       }
     }
+
+    img {
+      width: 50%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      margin-right: 20px; /* Add spacing between image and text */
+      // 
+
+      @include mobile{
+          width: 50%;
+          margin-top: 120px;
+          margin-right: 0; /* Remove right margin on mobile */
+          margin-bottom: 20px; /* Add spacing between image and text on mobile */
+      }
+    }
+
+    @include mobile {
+      font-size: 24px;
+      flex-direction: column; /* Stack elements vertically on mobile */
+      padding-top: 20px; /* Adjust padding on mobile */
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
-
-
+  
 }

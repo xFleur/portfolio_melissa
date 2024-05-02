@@ -14,11 +14,11 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           
-          {/* <h1>
-            <a href="#portfolio">
-            Portfolio
+          <h1>
+            <a href="#homepage">
+            MJ / Portfolio
             </a>
-          </h1> */}
+          </h1>
           
         </motion.span>
         <div className="social">

@@ -1,6 +1,6 @@
 import "./bio.scss";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const variants = {
   initial: {
@@ -18,7 +18,29 @@ const variants = {
 };
 
 const Bio = () => {
+  const [age, setAge] = useState(calculateAge(1999, 0, 28));
   const ref = useRef();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAge(calculateAge(1999, 0, 28));
+    }, 1000 * 60 * 60 * 24 * 365); // Update every year
+
+    return () => clearInterval(interval);
+  }, []);
+
+  function calculateAge(year, month, day) {
+    const today = new Date();
+    const birthDate = new Date(year, month, day);
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    return age;
+  }
 
   return (
     <motion.div
@@ -30,20 +52,19 @@ const Bio = () => {
   >
     <motion.div className="bio">
       <motion.div className="wrapper">
-      <motion.h1>Biography</motion.h1>
-      <motion.p>Hej! I am Melissa! 
-        I get energy from achieving results together with others. 
-        My adaptability and creative spirit enable me to quickly navigate new systems and situations. 
-        Outside the professional field, my passion for hockey goes back to my childhood and I still actively participate in ice hockey. 
-        Besides this beloved sport, I find passion in activities such as running, mountain biking and painting. 
-        Exploring the latest technologies also fascinates me.
-        </motion.p>
         <motion.img
             variants=""
             animate="scrollButton"
             src="./images/melissa/prof/Subject5.png"
             alt=""
           />
+           <div className="text-container">
+      <motion.h1>Biography</motion.h1>
+      <motion.p>Hej! I am Melissa and I am {age} years old, enthusiastic, driven and decisive are words that describe me well. 
+      Currently, I am studying Interactive Media Technology at KTH in Stockholm. I am particularly drawn to the intersection of design and technology, which is where my skills and passions truly come together. 
+      I find the process of blending creativity with the latest technological advancements to be extremely rewarding, and I believe this is where I can make a real impact in the field.
+      </motion.p>
+    </div>
       </motion.div>
     </motion.div>
     </motion.div>
