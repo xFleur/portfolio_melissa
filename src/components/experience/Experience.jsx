@@ -23,7 +23,7 @@ const Experience = () => {
   return (
     <motion.div
     ref={ref}
-    className="bio"
+    className="experience"
     variants={variants}
     initial="initial"
     whileInView="animate"
