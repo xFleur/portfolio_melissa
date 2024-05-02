@@ -6,29 +6,20 @@
   background: linear-gradient(180deg, #e6e4d9, #e6e4d9);
   position: relative;
 
-  // .wrapper > * {
-  //   padding: 10px;
-  //   flex: 1 100%;
-  // }
-
   .wrapper {
     max-width: 1366px;
     height: 100%;
     margin: auto;
-
     position: sticky;
     top: 0;
     left: 0;
     padding-top: 50px;
     text-align: left;
     color: rgb(210,90,49);
-
     display: flex;  
     flex-flow: row wrap;
-    // .aside { flex: 1 ; }
 
     .header {
-      // background: tomato;
       width: 100%;
     }
     .aside{
@@ -39,12 +30,21 @@
     }
     
     .aside-1 {
-      // background: gold;
+      padding: 40px 0px;
       width: 50%;
+    }
+
+    .aside-1 img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: top; 
+      border-radius: 50%;
     }
     
     .aside-2 {
-      // background: hotpink;
+      padding: 140px 0px;
       width: 50%;
     }
 
@@ -52,13 +52,17 @@
       // padding-top: calc(100vh - 100px);
       padding-top: 0px;
       margin: 20px;
-      font-size: 15px;
       .aside-1 { 
+        padding: 10px 0px;
         width: 100%;
-        order: 2; } 
+        height: 40%;
+        order: 1; } 
+        
       .aside-2 { 
+        padding: 10px 0px;
         width: 100%;
-        order: 1; }
+        height: 40%;
+        order: 2; }
     }
 
     h1 {
@@ -72,7 +76,7 @@
     }
 
     p{
-      font-size: 26px;
+      font-size: 28px;
       text-align: left;
       
       @include mobile {
