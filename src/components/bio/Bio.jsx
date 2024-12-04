@@ -58,7 +58,7 @@ const Bio = () => {
         // class="aside aside-1"
             variants=""
             animate="scrollButton"
-            src="./images/melissa/prof/Subject5.png"
+            src="./images/melissa/prof/herolaptop.jpg"
             alt=""
           />
           </div>
