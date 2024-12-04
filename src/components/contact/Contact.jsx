@@ -83,6 +83,19 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
+          <h2>Socials</h2>
+          <span>     
+          <div className="social"> 
+            <a href="https://www.linkedin.com/in/melissa-j/" target="_blank" rel="noopener noreferrer">
+              <img src="./images/icons/linkedin.png" alt="linkedin" />
+            </a>
+            <a href="https://github.com/xFleur" target="_blank" rel="noopener noreferrer">
+              <img src="./images/icons/github.png" alt="github" />
+            </a>
+          </div>
+          </span>
+        </motion.div>
+        {/* <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <span>julsing.m1999@gmail.com</span>
         </motion.div>
@@ -93,7 +106,7 @@ const Contact = () => {
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+46 7 000 00 00</span>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         <motion.div

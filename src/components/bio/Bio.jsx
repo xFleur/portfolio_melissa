@@ -63,9 +63,14 @@ const Bio = () => {
           />
           </div>
           <div class="aside aside-2"> 
-            <motion.p >Hej! I am Melissa and I am {age} years old, enthusiastic, driven and decisive are words that describe me well. 
-            Currently, I am studying Interactive Media Technology at KTH in Stockholm. I am particularly drawn to the intersection of design and technology, which is where my skills and passions truly come together. 
-            I find the process of blending creativity with the latest technological advancements to be extremely rewarding, and I believe this is where I can make a real impact in the field.
+         
+            <motion.p > <h2 >Hej! </h2>I am Melissa and I am {age} years old, 
+              enthusiastic, driven and decisive are words that describe me well. 
+            Currently, I am studying Interactive Media Technology at KTH in Stockholm. 
+            I am particularly drawn to the intersection of design and technology, 
+            which is where my skills and passions truly come together. 
+            I find the process of blending creativity with the latest technological advancements to be extremely rewarding, 
+            and I believe this is where I can make a real impact in the field.
             </motion.p>
           </div>
       </motion.div>
