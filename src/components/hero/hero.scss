@@ -90,8 +90,9 @@
   .imageContainer {
     height: 100%;
     position: absolute;
-    top: 0;
-    right: 100px;
+    top: 100px;
+    bottom: 0;
+    right: 150px;
 
     img{
       width: 100%;

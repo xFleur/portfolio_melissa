@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #d4f464;
+  // background-color: #d4f464;
  color: rgb(104, 95, 75);
   
   .bg {
     z-index: 999;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: 400px;
     background: #d4f464;
@@ -50,7 +50,7 @@
     border-radius: 50%;
     position: fixed;
     top: 27px;
-    left: 26px;
+    right: 26px;
     background-color: transparent;
     border: none;
     cursor: pointer;
