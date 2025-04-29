@@ -25,7 +25,7 @@ export default defineConfig({
   },
 
   define: {
-    'global': {},  // Global object to ensure compatibility
-    'process.env': process.env,  // Polyfill for process.env if needed
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),  // Only pass required environment variables
+    'global': 'globalThis',  // Ensures global object is defined
   },
 })
