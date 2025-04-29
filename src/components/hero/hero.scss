@@ -39,7 +39,7 @@
         @include mobile {
           font-size: 25px;
           letter-spacing: 8px;
-          margin-top: 360px;
+          margin-top: 290px; //Title
         }
       }
 
@@ -50,7 +50,7 @@
           margin-left: -160px;
           width: 60%;
           font-size: 28px;
-          margin-top: 160px;
+          margin-top: 190px;
           padding-left: 18px;
           text-align: left;
         }
@@ -75,8 +75,7 @@
           @include mobile {
             font-size: 20px;
             font-weight: 500;
-            margin-bottom: 20px;
-            margin-top: 120px;
+            margin-top: 50px;
             padding: 13px;
             background-color: rgba(255, 255, 255, 0.223);
           }
