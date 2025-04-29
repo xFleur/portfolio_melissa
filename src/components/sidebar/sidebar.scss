@@ -15,12 +15,15 @@
     height: 100px;
     border-radius: 50%;
     position: fixed;
-    top: 27px;
+    top: 0px;
     right: 26px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     scale: 1.2;
+    @include mobile{
+      right: 0px;
+    }
 
         // On hover, increase the size by 10% (scale: 1.1 means 10% larger)
         &:hover {

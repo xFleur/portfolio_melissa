@@ -51,6 +51,8 @@
           width: 60%;
           font-size: 28px;
           margin-top: 160px;
+          padding-left: 18px;
+          text-align: left;
         }
       }
 
@@ -102,9 +104,9 @@
     }
 
     @include mobile {
-      width: 100%;
+      width: 90%;
       height: auto;
-      right: 0px;
+      right: -88px;
       top: 100px;
     }
   }

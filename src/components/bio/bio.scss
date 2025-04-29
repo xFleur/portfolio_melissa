@@ -22,6 +22,7 @@
     .header {
       width: 100%;
     }
+
     .aside{
       padding: 20px;
       @include mobile{
@@ -46,10 +47,9 @@
     .aside-2 {
       padding: 140px 0px;
       width: 50%;
-      font-size: 90px;
     }
     .h2{
-      font-size: 50px;
+      font-size: 40px;
     }
 
     @include mobile {
@@ -79,8 +79,8 @@
       }
     }
 
-    p{
-      font-size: 28px;
+    div{
+      font-size: 24px;
       text-align: left;
       
       @include mobile {
