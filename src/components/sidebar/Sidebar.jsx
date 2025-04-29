@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Links from "./links/Links";
 import "./sidebar.scss";
 import ToggleButton from "./toggleButton/ToggleButton";
+const isMobile = typeof window !== "undefined" && window.matchMedia("(max-width: 768px)").matches;
 
 const variants = {
   open: {
@@ -13,7 +14,9 @@ const variants = {
     },
   },
   closed: {
-    clipPath: "circle(35px at 323px 50px)",
+    clipPath: isMobile
+    ? "circle(35px at 150px 50px)"  // mobile positie
+    : "circle(35px at 323px 50px)", // desktop positie
     transition: {
       delay: 0.5,
       type: "spring",
