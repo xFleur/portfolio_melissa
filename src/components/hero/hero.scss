@@ -39,7 +39,7 @@
         @include mobile {
           font-size: 25px;
           letter-spacing: 8px;
-          margin-top: 290px; //Title
+          margin-top: 240px; //Title
         }
       }
 
@@ -75,7 +75,7 @@
           @include mobile {
             font-size: 20px;
             font-weight: 500;
-            margin-top: 50px;
+            margin-top: 10px; //butons
             padding: 13px;
             background-color: rgba(255, 255, 255, 0.223);
           }
