@@ -1,4 +1,4 @@
-@import "../../app.scss";
+@use "../../app.scss" as *;  // Use the file and load it globally
 
 .contact {
   height: 100%;

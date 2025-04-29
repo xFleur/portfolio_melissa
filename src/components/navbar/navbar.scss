@@ -1,4 +1,5 @@
-@import "../../app.scss";
+@use "../../app.scss" as *;  // Use the file and load it globally
+
 
 .navbar {
   height: 100px;
