@@ -52,8 +52,8 @@ const Bio = () => {
   >
     <motion.div className="bio">
       <motion.div className="wrapper">
-      <motion.h1 class="header">Biography</motion.h1>
-      <div class="aside aside-1">
+      <motion.h1 className="header">Biography</motion.h1>
+      <div className="aside aside-1">
         <motion.img
         // class="aside aside-1"
             variants=""
@@ -62,16 +62,16 @@ const Bio = () => {
             alt=""
           />
           </div>
-          <div class="aside aside-2"> 
+          <div className="aside aside-2"> 
          
-            <motion.p > <h2 >Hej! </h2>I am Melissa and I am {age} years old, 
+            <motion.div > <h2 >Hej! </h2>I am Melissa and I am {age} years old, 
               enthusiastic, driven and decisive are words that describe me well. 
             Currently, I am studying Interactive Media Technology at KTH in Stockholm. 
             I am particularly drawn to the intersection of design and technology, 
             which is where my skills and passions truly come together. 
             I find the process of blending creativity with the latest technological advancements to be extremely rewarding, 
             and I believe this is where I can make a real impact in the field.
-            </motion.p>
+            </motion.div>
           </div>
       </motion.div>
     </motion.div>
