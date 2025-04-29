@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
-// hamburger menu svg
+
 const ToggleButton = ({ setOpen, isOpen }) => {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
-      <motion.svg width="23" height="23" viewBox="0 0 23 23" animate={isOpen ? "open" : "closed"}>
+      <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
           strokeWidth="3"
           stroke="black"
           strokeLinecap="round"
@@ -14,6 +16,8 @@ const ToggleButton = ({ setOpen, isOpen }) => {
           }}
         />
         <motion.path
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
           strokeWidth="3"
           stroke="black"
           strokeLinecap="round"
@@ -24,6 +28,8 @@ const ToggleButton = ({ setOpen, isOpen }) => {
           }}
         />
         <motion.path
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
           strokeWidth="3"
           stroke="black"
           strokeLinecap="round"
@@ -32,7 +38,7 @@ const ToggleButton = ({ setOpen, isOpen }) => {
             open: { d: "M 3 2.5 L 17 16.346" },
           }}
         />
-      </motion.svg>
+      </svg>
     </button>
   );
 };
