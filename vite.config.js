@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Polyfill for Node.js crypto module
-      crypto: 'crypto-browserify',
+      crypto: 'crypto-browserify',  // Add the crypto polyfill
     },
   },
   build: {
@@ -19,8 +19,13 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-
+        // Any SCSS settings you might need
       },
     },
+  },
+
+  define: {
+    'global': {},  // Global object to ensure compatibility
+    'process.env': process.env,  // Polyfill for process.env if needed
   },
 })
