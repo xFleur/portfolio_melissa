@@ -9,7 +9,6 @@ Currently, two official plugins are available:
 - npm i @emailjs/browser
 - https://www.youtube.com/watch?v=CHGHuF24Cjw
 - https://github.com/safak/animated-portfolio/blob/completed/src/App.jsx
-- npm run build --> index = hosting
 - npm install @mui/material + @emotion/styled-- portfolio grid
 - npm install @mui/material @emotion/react @emotion/styled
 - npm install @mui/material @mui/styled-engine-sc styled-components
@@ -22,5 +21,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-
+- npm run build --> index = hosting
 - npm run dev  
