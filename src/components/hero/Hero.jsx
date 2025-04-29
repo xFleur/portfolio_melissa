@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import Navbar from "../navbar/Navbar.jsx";
 
 
 const textVariants = {
@@ -50,6 +51,7 @@ const Hero = () => {
   
   return (
     <div className="hero">
+          <Navbar />
       <div className="wrapper">
         <motion.div
           className="textContainer"
