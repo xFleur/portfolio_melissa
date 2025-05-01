@@ -67,12 +67,14 @@ const Bio = () => {
             <h2 >Hej! </h2>
             <br></br>
             I am Melissa and I am {age} years old, 
-            enthusiastic, driven and decisive are words that describe me well. 
+            enthusiastic, driven and decisive are words that describe me well 
+            and I am always eager to take on new challenges.
             Currently, I am studying Interactive Media Technology at KTH in Stockholm. 
-            I am particularly drawn to the intersection of design and technology, 
-            which is where my skills and passions truly come together. 
-            I find the process of blending creativity with the latest technological advancements to be extremely rewarding, 
-            and I believe this is where I can make a real impact in the field.
+            I have a strong passion for the intersection of design and technology, 
+            where my skills and interests converge. 
+            I find great fulfillment in blending creativity with cutting-edge technological advancements. 
+            I take a keen interest in the development of accessible technologies, 
+            believing that these advancements should be a central part of creating inclusive digital experiences.
             </motion.div>
           </div>
       </motion.div>
