@@ -1,7 +1,7 @@
 import './app.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter, Routes, Route from react-router-dom
 
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero'
 import Bio from './components/bio/Bio'
 import Portfolio from './components/portfolio/Portfolio'

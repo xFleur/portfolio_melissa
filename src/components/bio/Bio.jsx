@@ -63,8 +63,11 @@ const Bio = () => {
           />
           </div>
           <div className="aside aside-2"> 
-            <motion.div className="bioText"> <h2 >Hej! </h2>I am Melissa and I am {age} years old, 
-              enthusiastic, driven and decisive are words that describe me well. 
+            <motion.div className="bioText"> 
+            <h2 >Hej! </h2>
+            <br></br>
+            I am Melissa and I am {age} years old, 
+            enthusiastic, driven and decisive are words that describe me well. 
             Currently, I am studying Interactive Media Technology at KTH in Stockholm. 
             I am particularly drawn to the intersection of design and technology, 
             which is where my skills and passions truly come together. 
