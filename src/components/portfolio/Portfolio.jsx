@@ -2,6 +2,8 @@ import "./portfolio.scss";
 import React, { useState } from 'react';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from 'react-router-dom';
+// import projects from '../../data/projects';
 
 const variants = {
   initial: {
@@ -38,6 +40,7 @@ const Portfolio = () => {
       <div className="gallery">
 
           {/* Image 1 */}
+          <Link to="/portfolio/what2pack" className="gallery-item">
           <motion.div className="gallery-item">
             <img src="./images/portfolio_afb/23_what2pack/homescreen.png" alt="Image 1" />
             <div className="tags">
@@ -54,8 +57,10 @@ const Portfolio = () => {
           <h2 className="image-title">What2Pack</h2>
           <p className="image-subtitle">What2Pack extra information</p>
           </motion.div>
+          </Link>
 
           {/* Image 2 */}
+          <Link to="/portfolio/workbuddy" className="gallery-item">
           <motion.div className="gallery-item">
             <img src="./images/portfolio_afb/22_workbuddy/5.1_final2.png" alt="Image 2" />
               <div className="tags">
@@ -71,6 +76,7 @@ const Portfolio = () => {
             <h2 className="image-title">What2Pack</h2>
             <p className="image-subtitle">What2Pack extra information</p>
           </motion.div>
+          </Link>
 
           {/* Image 3 */}
           <motion.div className="gallery-item">

@@ -1,0 +1,72 @@
+// @use "../../app.scss" as *;  // Use the file and load it globally
+
+// .project-detail{
+//     height: 100%;
+//     overflow: hidden;
+//     background: linear-gradient(180deg, #e6e4d9, #e6e4d9);
+//     position: relative;
+// }
+//     img {
+//         height: 345px;
+  
+// }
+.project-detail {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 10px;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+  
+      .tag {
+        background: #eee;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+    }
+  
+    .back-link {
+      background-color: transparent;
+      color: #0077ff;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0.5rem 1rem;
+  
+      &:hover {
+        color: #005fcc;
+      }
+    }
+  }
+
+  
