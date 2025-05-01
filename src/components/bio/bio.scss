@@ -52,11 +52,12 @@
       height: 75%;
       max-height: 100%;
       object-fit: cover;
-      object-position: top; 
+      object-position: -5px -49px; 
       border-radius: 50%;
       @include mobile{
         width: 67%;
         height: 67%;
+        object-position: -5px -19px; 
         margin-left: 15%; /* Horizontaal centreren */
         margin-right: auto; /* Horizontaal centreren */
       }
@@ -83,6 +84,7 @@
       color: rgb(210,90,49);
       @include mobile {
         font-size: 36px;
+        margin-top: 50px;
       }
     }
 
