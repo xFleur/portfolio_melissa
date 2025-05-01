@@ -44,7 +44,7 @@
       @include mobile {
         grid-template-columns: 1fr;  // Stacks the columns in mobile view
         gap: 0px;  // Adjust gap for mobile screens
-        margin-top: 8px;
+        margin-top: 0px;
       }
 
       .gallery-item {
@@ -57,7 +57,7 @@
         // height: 300px; /* Define a fixed height for the gallery item */
         height: 400px;
         @include mobile {
-          height: 150px;
+          height: 165px;
         }
 
         .tags {
@@ -96,7 +96,7 @@
         left: 0;
         bottom: 0;
         @include mobile {
-          height: 100px;
+          height: 120px;
         }
         }
         &:hover img{

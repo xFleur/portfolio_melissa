@@ -1,5 +1,5 @@
 import "./projectDetail.scss";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import projects from '../../../data/projectData';
@@ -9,6 +9,7 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -48,18 +49,33 @@ const ProjectDetail = () => {
   return (
     <motion.div className="project-detail">
       <motion.h1 variants={itemVariants(0.1)} >{project.title}</motion.h1>
-      <motion.img    variants={itemVariants(0.2)} src={project.image} alt={project.title} />
       <motion.h2 variants={itemVariants(0.3)}>{project.subtitle}</motion.h2>
-      <motion.p variants={itemVariants(0.4)} >{project.description}</motion.p>
       <motion.div variants={itemVariants(0.5)} className="tags">
         {project.tags.map(tag => (
           <span className="tag" key={tag}>{tag}</span>
         ))}
       </motion.div>
-      {/* <a href="/portfolio_melissa/#Portfolio" className="back-link">← Terug naar Portfolio</a> */}
+       <motion.div className="carousel" variants={itemVariants(0.2)}>
+        <button
+          className="carousel-btn prev"
+          onClick={() => setCurrentIndex((prev) => (prev === 0 ? project.images.length - 1 : prev - 1))}>
+          ‹
+        </button>
+
+        <img
+          src={project.images[currentIndex]}
+          alt={`${project.title} afbeelding ${currentIndex + 1}`}
+          className="carousel-image"/>
+
+        <button
+          className="carousel-btn next"
+          onClick={() => setCurrentIndex((prev) => (prev === project.images.length - 1 ? 0 : prev + 1))}>
+          ›
+        </button>
+      </motion.div>
+      <motion.p variants={itemVariants(0.4)} >{project.description}</motion.p>
       <motion.button className="back-link" onClick={handleBack}>
-        ← Terug naar Portfolio
-      </motion.button>
+        ← Terug naar Portfolio </motion.button>
     </motion.div>
   );
 };
