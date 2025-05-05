@@ -10,6 +10,9 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
   const [currentIndex, setCurrentIndex] = useState(0);
+  // Corrigeer het pad zodat het wijst naar /images/... in de public folder
+  const correctedPath = project.images[currentIndex].replace('./', '../');
+
 
   if (!project) {
     return <div>Project not found</div>;
@@ -63,9 +66,10 @@ const ProjectDetail = () => {
         </button>
 
         <img
-          src={project.images[currentIndex]}
+          src={correctedPath}
           alt={`${project.title} afbeelding ${currentIndex + 1}`}
-          className="carousel-image"/>
+          className="carousel-image"
+        />
 
         <button
           className="carousel-btn next"
